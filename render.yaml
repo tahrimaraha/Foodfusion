@@ -6,6 +6,8 @@ services:
     name: foodfusion-api
     runtime: node
     plan: free
+    # Same region as the Neon database.
+    region: singapore
     rootDir: server
     # Free instances have no pre-deploy step, so migrations run at build.
     buildCommand: npm ci && npx prisma generate && npx prisma migrate deploy
