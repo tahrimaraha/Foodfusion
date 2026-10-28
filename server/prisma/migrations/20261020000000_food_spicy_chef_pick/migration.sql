@@ -1,0 +1,2 @@
+ALTER TABLE "foods" ADD COLUMN "is_spicy" BOOLEAN NOT NULL DEFAULT false;
+ALTER TABLE "foods" ADD COLUMN "is_chef_pick" BOOLEAN NOT NULL DEFAULT false;
